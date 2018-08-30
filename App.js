@@ -8,15 +8,17 @@
 
 import React from 'react';
 import { StyleSheet, Text, View, Image} from 'react-native';
+import Judul from './Component/Judul';
 
 export default class App extends React.Component {
   render() {
     return (
        <View style={styles.container}>
+       <Judul/>
         <Text style={styles.instructions}>Nama: Salsabila Cahya Alifia </Text>
-        <Text style={styles.instructions}>Kelas: XI_RPL 3 </Text>
+        <Text style={styles.instructions}>Kelas: XIRPL 3 </Text>
         <Text style={styles.instructions}>No.Absen: 36 </Text>
-        <Image style={{width: 400, height:500}}
+        <Image style={{width: 300, height:300}}
         source={require('./sabil.png')}
         /> 
       </View>
@@ -32,7 +34,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'yellow',
   },
   welcome: {
-    fontSize: 35,
+    fontSize: 10,
     textAlign: 'center',
     margin: 10,
     color: 'black',
