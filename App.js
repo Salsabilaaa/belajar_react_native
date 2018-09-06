@@ -14,13 +14,15 @@ export default class App extends React.Component {
   render() {
     return (
        <View style={styles.container}>
-       <Judul/>
-        <Text style={styles.instructions}>Nama: Salsabila Cahya Alifia </Text>
-        <Text style={styles.instructions}>Kelas: XIRPL 3 </Text>
-        <Text style={styles.instructions}>No.Absen: 36 </Text>
-        <Image style={{width: 300, height:300}}
-        source={require('./sabil.png')}
-        /> 
+       <Judul title="BIODATA"/>
+       <Judul title="LOGIN"/>
+       <Judul title="NAMBAH"/>
+       <Text style={styles.instructions}>Nama: Salsabila Cahya Alifia </Text>
+       <Text style={styles.instructions}>Kelas: XI RPL 3 </Text>
+       <Text style={styles.instructions}>No.Absen: 36 </Text>
+       <Image style={{width: 300, height:300}}
+       source={require('./sabil.png')}
+       /> 
       </View>
     );
   }
@@ -31,10 +33,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'yellow',
+    backgroundColor: '#69F4FF',
   },
   welcome: {
-    fontSize: 10,
+    fontSize: 20,
     textAlign: 'center',
     margin: 10,
     color: 'black',
