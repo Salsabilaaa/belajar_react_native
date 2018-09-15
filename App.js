@@ -1,33 +1,33 @@
 import React from 'react';
-import { 
-	Platform, 
-	StyleSheet, 
-	Text, 
-	View,
-	StatusBar
+import {   
+  StyleSheet,
+  Text, 
+  View,
+  StatusBar
 } from 'react-native';
 
 import Login from './Screen/pages/Login';
+import Signup from './Screen/pages/Signup';
 
 export default class App extends React.Component {
-  render() {
-    return (
-       <View style={styles.container}>
-       	<StatusBar
-    		backgroundColor="#1c313a"
-     		barStyle="light-content"
-   		/>
-       	<Login/>
-      </View>
-    );
-  }
+	render() {
+		return (
+			<View style={styles.container}>
+				<StatusBar
+     				backgroundColor="blue"
+     				barStyle="light-content"
+  				 />
+  				 <Signup/>
+			</View>
+		);
+	}
 }
 
 const styles = StyleSheet.create({
-  container: {
-  	backgroundColor:'pink',
-  	flex: 1,
-  	alignItems:'center',
-  	justifyContent:'center'
-  }
+	container : {
+		backgroundColor:'#455a64',
+		flex: 1,
+		alignItems:'center',
+		justifyContent:'center'
+	}
 });
