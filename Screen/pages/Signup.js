@@ -8,6 +8,8 @@ import {
 
 import Logo from '../components/Logo';
 import Form from '../components/Form';
+import Judull from '../components/Judull';
+
 export default class Signup extends React.Component {
 	render() {
 		return(
